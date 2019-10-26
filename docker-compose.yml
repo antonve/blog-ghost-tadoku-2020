@@ -9,6 +9,7 @@ services:
     expose:
       - 2368
     environment:
+      url: https://blog.tadoku.app
       VIRTUAL_HOST: blog.tadoku.app
       VIRTUAL_PORT: 2368
       LETSENCRYPT_HOST: blog.tadoku.app
