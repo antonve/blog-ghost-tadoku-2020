@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  tadoku-blog:
+    image: ghost:3.0
+    container_name: tadoku-blog
+    network_mode: bridge
+    restart: always
+    expose:
+      - 2368
+    environment:
+      VIRTUAL_HOST: blog.tadoku.app
+      VIRTUAL_PORT: 2368
+      LETSENCRYPT_HOST: blog.tadoku.app
+      LETSENCRYPT_EMAIL: hello@tadoku.app
